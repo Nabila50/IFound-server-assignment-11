@@ -110,18 +110,7 @@ async function run() {
     
 
     //  // --------JWT Token related API---------------
-    // app.post('/jwt', async(req, res)=>{
-    //   const userData = req.body;
-    //   const token = jwt.sign(userData, process.env.JWT_ACCESS_SECRET, {expiresIn: '1d'});
 
-    //   // set token in the cookies
-    //   res.cookie('token', token,
-    //     {httpOnly: true,
-    //       secure: false
-    //   });
-
-    //   res.send({success: true})
-    // });
 
     app.get("/lost/:id", async (req, res) => {
       const id = req.params.id;
